@@ -1,0 +1,26 @@
+{
+    "sourceFile": "components/3dcard.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1750879701577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750879727018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+\"use client\";\r\n+\r\n+import React from \"react\";\r\n+import { CardBody, CardContainer, CardItem } from \"@/components/ui/3d-card\";\r\n+\r\n+export function ThreeDCardDemo() {\r\n+  return (\r\n+    <CardContainer className=\"inter-var\">\r\n+      {/* Your card JSX */}\r\n+    </CardContainer>\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1750879772787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,16 +9,4 @@\n       {/* Your card JSX */}\r\n     </CardContainer>\r\n   );\r\n }\r\n-\"use client\";\r\n-\r\n-import React from \"react\";\r\n-import { CardBody, CardContainer, CardItem } from \"@/components/ui/3d-card\";\r\n-\r\n-export function ThreeDCardDemo() {\r\n-  return (\r\n-    <CardContainer className=\"inter-var\">\r\n-      {/* Your card JSX */}\r\n-    </CardContainer>\r\n-  );\r\n-}\r\n"
+                }
+            ],
+            "date": 1750879701577,
+            "name": "Commit-0",
+            "content": "\"use client\";\r\n\r\nimport React from \"react\";\r\nimport { CardBody, CardContainer, CardItem } from \"@/components/ui/3d-card\";\r\n\r\nexport function ThreeDCardDemo() {\r\n  return (\r\n    <CardContainer className=\"inter-var\">\r\n      {/* Your card JSX */}\r\n    </CardContainer>\r\n  );\r\n}\r\n"
+        }
+    ]
+}

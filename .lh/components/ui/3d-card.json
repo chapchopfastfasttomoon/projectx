@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/ui/3d-card",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1750876734782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1750876734782,
+            "name": "Commit-0",
+            "content": "\"use client\";\r\n\r\n\r\nimport React from \"react\";\r\nimport { CardBody, CardContainer, CardItem } from \"../ui/3d-card\";\r\n\r\nexport function ThreeDCardDemo() {\r\n  return (\r\n    <CardContainer className=\"inter-var\">\r\n      <CardBody className=\"bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  \">\r\n        <CardItem\r\n          translateZ=\"50\"\r\n          className=\"text-xl font-bold text-neutral-600 dark:text-white\"\r\n        >\r\n          Make things float in air\r\n        </CardItem>\r\n        <CardItem\r\n          as=\"p\"\r\n          translateZ=\"60\"\r\n          className=\"text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300\"\r\n        >\r\n          Hover over this card to unleash the power of CSS perspective\r\n        </CardItem>\r\n        <CardItem\r\n          translateZ=\"100\"\r\n          rotateX={20}\r\n          rotateZ={-10}\r\n          className=\"w-full mt-4\"\r\n        >\r\n          <img\r\n            src=\"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\r\n            height=\"1000\"\r\n            width=\"1000\"\r\n            className=\"h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl\"\r\n            alt=\"thumbnail\"\r\n          />\r\n        </CardItem>\r\n        <div className=\"flex justify-between items-center mt-20\">\r\n          <CardItem\r\n            translateZ={20}\r\n            translateX={-40}\r\n            as=\"button\"\r\n            className=\"px-4 py-2 rounded-xl text-xs font-normal dark:text-white\"\r\n          >\r\n            Try now →\r\n          </CardItem>\r\n          <CardItem\r\n            translateZ={20}\r\n            translateX={40}\r\n            as=\"button\"\r\n            className=\"px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold\"\r\n          >\r\n            Sign up\r\n          </CardItem>\r\n        </div>\r\n      </CardBody>\r\n    </CardContainer>\r\n  );\r\n}\r\n"
+        }
+    ]
+}

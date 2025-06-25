@@ -1,0 +1,22 @@
+{
+    "sourceFile": "components/MagicButton.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1750878988345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750879278262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-\"use client\";\n import React from \"react\";\n \n /**\n  *  UI: border magic from tailwind css btns\n"
+                }
+            ],
+            "date": 1750878988345,
+            "name": "Commit-0",
+            "content": "\"use client\";\nimport React from \"react\";\n\n/**\n *  UI: border magic from tailwind css btns\n *  Link: https://ui.aceternity.com/components/tailwindcss-buttons\n *\n *  change border radius to rounded-lg\n *  add margin of md:mt-10\n *  remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50\n */\nconst MagicButton = ({\n  title,\n  icon,\n  position,\n  handleClick,\n  otherClasses,\n}: {\n  title: string;\n  icon: React.ReactNode;\n  position: string;\n  handleClick?: () => void;\n  otherClasses?: string;\n}) => {\n  return (\n    <button\n      className=\"relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none\"\n      onClick={handleClick}\n    >\n      <span className=\"absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]\" />\n\n      {/* remove px-3 py-1, add px-5 gap-2 */}\n      <span\n        className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg\n             bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 ${otherClasses}`}\n      >\n        {position === \"left\" && icon}\n        {title}\n        {position === \"right\" && icon}\n      </span>\n    </button>\n  );\n};\n\nexport default MagicButton;\n"
+        }
+    ]
+}
