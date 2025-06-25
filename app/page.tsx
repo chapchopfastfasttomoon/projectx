@@ -11,7 +11,8 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
-import { ThreeDCardDemo } from "@/components/3dcardeffect";  // <--- import here
+import  ThreeDCardCarousel  from "@/components/ThreeDCardCarousel";
+
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
         <Grid />
         <Approach />
         
-        <ThreeDCardDemo />  {/* <-- Add 3D card here */}
+        <ThreeDCardCarousel />  {/* <-- Add 3D card here */}
 
         <RecentProjects />
         <Clients />
