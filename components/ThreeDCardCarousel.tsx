@@ -35,7 +35,7 @@ export default function ThreeDCardCarousel() {
 
       <CardContainer className="inter-var">
         {/* ⚠️  overflow-hidden removed */}
-        <CardBody className="relative group/card bg-[#13162D] text-[#BEC1DD] border border-white/[.1] w-auto sm:w-[30rem] h-auto rounded-3xl p-6">
+        <CardBody className="relative group/card bg-transparent text-[#BEC1DD] border border-white/[.1] w-auto sm:w-[30rem] h-auto rounded-3xl p-6">
           <CardItem translateZ="50" className="text-xl font-bold text-white">
             {current.title}
           </CardItem>
@@ -58,7 +58,7 @@ export default function ThreeDCardCarousel() {
               translateZ={20}
               as="button"
               onClick={prev}
-              className="px-4 py-2 rounded-xl text-xs font-bold bg-white text-black"
+              className="px-4 py-2 rounded-xl text-sm font-bold bg-transparent text-purple"
             >
               ← Prev
             </CardItem>
@@ -66,7 +66,7 @@ export default function ThreeDCardCarousel() {
               translateZ={20}
               as="button"
               onClick={next}
-              className="px-4 py-2 rounded-xl text-xs font-bold bg-white text-black"
+              className="px-4 py-2 rounded-xl text-sm font-bold bg-transparent text-purple"
             >
               Next →
             </CardItem>
