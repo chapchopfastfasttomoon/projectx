@@ -1,0 +1,22 @@
+{
+    "sourceFile": "app/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1750772969478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750773610877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,31 @@\n+\"use client\";\n+\n+import { navItems } from \"@/data\";\n+\n+import Hero from \"@/components/Hero\";\n+import Grid from \"@/components/Grid\";\n+import Footer from \"@/components/Footer\";\n+import Clients from \"@/components/Clients\";\n+import Approach from \"@/components/Approach\";\n+import Experience from \"@/components/Experience\";\n+import RecentProjects from \"@/components/RecentProjects\";\n+import { FloatingNav } from \"@/components/ui/FloatingNavbar\";\n+\n+const Home = () => {\n+  return (\n+    <main className=\"relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5\">\n+      <div className=\"max-w-7xl w-full\">\n+        <FloatingNav navItems={navItems} />\n+        <Hero />\n+        <Grid />\n+        <Approach />\n+        <RecentProjects />\n+        <Clients />\n+        <Experience />\n+        <Footer />\n+      </div>\n+    </main>\n+  );\n+};\n+\n+export default Home;\n"
+                }
+            ],
+            "date": 1750772969478,
+            "name": "Commit-0",
+            "content": "\"use client\";\n\nimport { navItems } from \"@/data\";\n\nimport Hero from \"@/components/Hero\";\nimport Grid from \"@/components/Grid\";\nimport Footer from \"@/components/Footer\";\nimport Clients from \"@/components/Clients\";\nimport Approach from \"@/components/Approach\";\nimport Experience from \"@/components/Experience\";\nimport RecentProjects from \"@/components/RecentProjects\";\nimport { FloatingNav } from \"@/components/ui/FloatingNavbar\";\n\nconst Home = () => {\n  return (\n    <main className=\"relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5\">\n      <div className=\"max-w-7xl w-full\">\n        <FloatingNav navItems={navItems} />\n        <Hero />\n        <Grid />\n        <Approach />\n        <RecentProjects />\n        <Clients />\n        <Experience />\n        <Footer />\n      </div>\n    </main>\n  );\n};\n\nexport default Home;\n"
+        }
+    ]
+}
