@@ -1,7 +1,6 @@
 "use client";
 
 import { navItems } from "@/data";
-
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
@@ -10,9 +9,8 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-
-import  ThreeDCardCarousel  from "@/components/ThreeDCardCarousel";
-
+import ThreeDCardCarousel from "@/components/ThreeDCardCarousel";
+import { AppleCardsCarouselDemo } from "@/components/applecards"; // Import the Apple carousel
 
 const Home = () => {
   return (
@@ -22,8 +20,16 @@ const Home = () => {
         <Hero />
         <Grid />
         <Approach />
-        
-        <ThreeDCardCarousel />  {/* <-- Add 3D card here */}
+
+        {/* 3D Card Carousel */}
+        <section className="py-20">
+          <ThreeDCardCarousel />
+        </section>
+
+        {/* Apple Style Card Carousel */}
+        <section className="py-20 bg-white dark:bg-black-100"> {/* Added background for contrast */}
+          <AppleCardsCarouselDemo />
+        </section>
 
         <RecentProjects />
         <Clients />
